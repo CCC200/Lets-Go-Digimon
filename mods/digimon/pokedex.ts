@@ -262,7 +262,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData & {stage: string}} = {
 		name: "Biyomon",
 		stage: "Rookie",
 		universe: "Digimon",
-		universe: "Digimon",
 		types: ["Flying", "Fire"],
 		gender: "N",
 		baseStats: {hp: 40, atk: 35, def: 35, spa: 45, spd: 40, spe: 56},
