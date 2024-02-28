@@ -5,7 +5,7 @@ export const Formats: FormatList = [
 		column: 1,
 	},
 	{
-		name: "[Digimon] Random Singles",
+		name: "[Digimon] Random Battle",
 		desc: "Battle and play with your friends with this Digimon & LGPE hyrbid.",
 		mod: "digimon",
 		team: "randomDigimon",
@@ -43,14 +43,14 @@ export const Formats: FormatList = [
 		ruleset: ['Standard'],
 	},
 	{
-		name: "[Digimon] Random Digimon x Pokemon",
+		name: "[Digimon] Digimon x Pokemon Random Battle",
 		desc: "Worlds Collide in this Digimon & LGPE Format!",
 		mod: "digimon",
 		team: "randomDigimon",
 		ruleset: ['Standard'],
 	},
 	{
-		name: "[Digimon] Random Digimon x Pokemon Doubles",
+		name: "[Digimon] Digimon x Pokemon Random Doubles",
 		desc: "Worlds Collide in this Digimon & LGPE Format!",
 		mod: "digimon",
 		gameType: 'doubles',
