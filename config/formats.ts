@@ -57,4 +57,21 @@ export const Formats: FormatList = [
 		team: "randomDigimon",
 		ruleset: ['Standard'],
 	},
+	{
+		section: "Digimon Metas",
+		column: 1,
+	},
+	{
+		name: "[Gen 7 Let's Go] Digimon Singles",
+		desc: "Singles Format",
+		mod: "digimon",
+		ruleset: ['Standard', 'Standard NEXT'],
+	},
+	{
+		name: "[Gen 7 Let's Go] Digimon Doubles",
+		desc: "Doubles Format",
+		mod: "digimon",
+		gameType: 'doubles',
+		ruleset: ['Standard', 'Standard NEXT'],
+	},
 ];
