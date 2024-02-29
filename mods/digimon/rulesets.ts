@@ -39,6 +39,13 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			const rule_breaks = new Array();
 			const mon = this.dex.species.get(set.species);
 			if(mon.universe === 'Digimon') {
+				//X-Form not valid as standalone
+				if(mon.name.includes("-X")) {
+					return[ //Must return, breaks other checks
+						`Invalid mon: ${mon.name}.`,
+						`Use the base form of this Digimon and equip X-Antibody as held item.`
+					];
+				}
 				//Only X-Antibody as item
 				if(set.item && set.item !== 'X-Antibody') {
 					rule_breaks.push(
