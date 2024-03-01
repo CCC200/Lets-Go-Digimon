@@ -35,6 +35,18 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		onUpdate(pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
+		onTeamPreview() {
+			const names_used = new Array();
+			this.add('', '--DIGIMON TYPES--');
+			for(const pokemon of this.getAllPokemon()) {
+				const universe = this.dex.species.get(pokemon.species).universe;
+				if(universe === 'Pokemon') continue;
+				if(!names_used.includes(pokemon.name)) {
+					names_used.push(pokemon.name);
+					this.add('', `${pokemon.name} `, ` ${pokemon.types.join('/')}`);
+				}
+			}
+		},
 		onValidateSet(set) {
 			const rule_breaks = new Array();
 			const mon = this.dex.species.get(set.species);
