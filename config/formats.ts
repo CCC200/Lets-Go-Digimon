@@ -74,4 +74,11 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		ruleset: ['Standard', 'Standard NEXT'],
 	},
+	{
+		name: "[Gen 7 Let's Go] Digimon Triples",
+		desc: "Triples Format",
+		mod: "digimon",
+		gameType: 'triples',
+		ruleset: ['Standard', 'Standard NEXT'],
+	},
 ];
